@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cartoon Network - Stay Tooned!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/9/93/Cartoon_Network_television_icon.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="bgmusic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="overlay"></div>
+    <h1>Welcome to Cartoon Network!</h1>
+
+    <div class="navbar">
+        <a href="#shows">Shows</a>
+        <a href="#games">Games</a>
+        <a href="#coolstuff">Cool peeps!</a>
+    </div>
+
+    <div class="main-content" id="shows">
+        <h2>Toon In for Tonight's Shows!</h2>
+        <marquee class="glow">New Episode of Powerpuff Girls at 7:30 PM - Don't Miss It!</marquee>
+        <div class="show">
+            <h3>Shows:</h3>
+            <table>
+                <tr class="heading">
+                    <th>Show Name</th>
+                    <th>Show Time</th>
+                </tr>
+                <tr>
+                    <td>Johnny Bravo</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Dexter's Laboratory</td>
+                    <td>6:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Ed, Edd n Eddy</td>
+                    <td>7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Powerpuff Girls</td>
+                    <td>7:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Courage the Cowardly Dog</td>
+                    <td>8:00 PM</td>
+                </tr>
+            </table>
+        </div>
+        <img class="character" src="johny-bravo.gif" style="top: 100px; left: 50px;">
+        <img class="character" src="dexter-lab.gif" style="top: 150px; right: 50px;">
+        <img class="character" src="powerpuff-girls.gif" style="bottom: 50px; left: 100px;">
+    </div>
+    <div id="games">
+        <h2>Play Games!</h2>
+        <div class="game">
+            <img src="games.webp" alt="">
+            <table>
+                <tr class="heading">
+                    <th>Game Name</th>
+                </tr>
+                <tr>
+                    <td>Johnny Bravo - The Hukka Mega Mighty Ultra Extreme Date-O-Rama</td>
+                </tr>
+                <tr>
+                    <td>Dexter's Laboratory - Clone-A-Doodle-Doo</td>
+                </tr>
+                <tr>
+                    <td>Ed, Edd n Eddy - Jawbreaker Jumble</td>
+                </tr>
+                <tr>
+                    <td>Powerpuff Girls - Mojo Jojo's Clone Zone</td>
+                </tr>
+                <tr>
+                    <td>Courage the Cowardly Dog - Creep TV</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="coolstuff">
+        <h2>Cool Peeps!</h2>
+        <img src="coolstuff.webp" alt="">
+        <h2>Thanks for Making Cartoon network what it is!</h2>
+        <p>Cartoon Network is the number one destination for anyone who wishes to watch cartoons. We have a wide range
+            of shows and games that cater to all age groups. We are proud to have been entertaining our viewers for over
+            20 years now. We would like to thank all our viewers for their continued support and love. Stay Tooned!</p>
+        <div class="cool-fans">
+            <h3>Cool Fans this week:</h3>
+            <ul>
+                <li>John Doe</li>
+                <li>Jane Smith</li>
+                <li>Michael Johnson</li>
+                <li>Emily Davis</li>
+                <li>Chris Brown</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Cartoon Network &copy; 1999 - All Rights Reserved</p>
+        <p>Visit our <a class="guestbook-link" href="#guestbook">Guestbook</a> and leave a message!</p>
+        <img src="best-viewed-with.jpg" alt="">
+    </div>
+    <div id="guestbook-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Guestbook</h2>
+            <form id="guestbook-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
